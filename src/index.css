@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Prata&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: outfit;
+}
+
+.prata-regular {
+  font-family: "Prata", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+a.active hr {
+  display: block;
+}
+
+/* ::-webkit-scrollbar {
+  display: none;
+} */
+
+/* styles.css */
+.support-chat {
+  border: 1px solid #e0e0e0;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif; /* Use a clean font */
+}
+
+.chat-box {
+  height: 300px;
+  overflow-y: auto;
+  border: 1px solid #e0e0e0;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  background-color: #f9f9f9; /* Light background for chat area */
+}
+
+.chat-box .message {
+  margin-bottom: 10px;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.chat-box .user {
+  text-align: right;
+  color: #007bff; /* Amazon-like blue */
+  background-color: #e6f7ff; /* Light blue background for user messages */
+}
+
+.chat-box .user .message {
+  display: inline-block;
+}
+
+.chat-box .admin {
+  text-align: left;
+  color: #28a745; /* Amazon-like green */
+  background-color: #f0fdf4; /* Light green background for admin messages */
+}
+
+.chat-box .admin .message {
+  display: inline-block;
+}
+
+.chat-box::-webkit-scrollbar {
+  width: 8px;
+}
+
+.chat-box::-webkit-scrollbar-thumb {
+  background-color: #c0c0c0; /* Scrollbar thumb color */
+  border-radius: 4px;
+}
+
+.chat-box::-webkit-scrollbar-track {
+  background: #f0f0f0; /* Scrollbar track color */
+}
+
+.support-chat h2 {
+  margin-bottom: 10px;
+  font-size: 1.5em;
+  text-align: center;
+  color: #333;
+}
+
+@media (max-width: 640px) {
+  a.active {
+    background-color: black;
+    color: #fff;
+  }
+}
